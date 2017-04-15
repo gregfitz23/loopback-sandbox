@@ -6,3 +6,10 @@
 6. Response contains the error message.  Server logs will have the full Error (including stacktrace)
 
 **Note:** The code in server/boot/automigrate.js to drops collections on server restart.  Comment this if you don't want that behavior
+
+
+Versions:
+Windows 10 Home OS Build 14393.953
+Node 6.10.0
+loopback 2.22.0 (also reproduced in 3.4.0)
+loopback-connector-arangodb 1.1.0
