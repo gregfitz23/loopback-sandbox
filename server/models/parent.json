@@ -1,0 +1,39 @@
+{
+  "name": "Parent",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "children": {
+      "type": "hasMany",
+      "model": "Child",
+      "polymorphic": "polymorphic"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {
+    "testPolymorphic": {
+      "isStatic": false,
+      "accepts": [],
+      "returns": [],
+      "description": "",
+      "http": [
+        {
+          "path": "/testPolymorphic",
+          "verb": "get"
+        }
+      ]
+    }
+  }
+}

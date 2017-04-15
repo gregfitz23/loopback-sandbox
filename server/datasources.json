@@ -1,6 +1,10 @@
 {
   "db": {
+    "host": "localhost",
+    "database": "loopback-sandbox",
+    "username": "root",
+    "password": "root",
     "name": "db",
-    "connector": "memory"
+    "connector": "arangodb"
   }
 }
